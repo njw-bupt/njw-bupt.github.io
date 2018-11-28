@@ -309,7 +309,7 @@
 <p><br>实现方法<br><br></p>
 
 <p><ol></ol></p>
-<li><br>CommentApp组件渲染ComponentInput（输入评论区）和ComponentList（显示评论区两个组件），CommentApp向CommentInput组件传入一个回调函数onSubmit，这个函数会用从子组件那里收到的数据更新自己的state：<br><pre><br> &amp;lt CommentInput onSubmit={this.handleOnSubmit.bind(this) } /&gt;<br> &amp;lt CommentList comments={this.state.comments} /&gt;<br></pre><br></li>
+<li><br>CommentApp组件渲染ComponentInput（输入评论区）和ComponentList（显示评论区两个组件），CommentApp向CommentInput组件传入一个回调函数onSubmit，这个函数会用从子组件那里收到的数据更新自己的state：<br><pre><br> &lt; CommentInput onSubmit={this.handleOnSubmit.bind(this) } /&gt;<br> &lt; CommentList comments={this.state.comments} /&gt;<br></pre><br></li>
 
 <li><br>在子组件ComponentInput里，绑定了一个触发回调函数的关联事件（点击button），在这个关联事件中传递数据（评论用户和评论内容）并且触发回调：<br><pre><br> handleSubmit(){<br>        if(this.props.onSubmit){<br>            this.props.onSubmit({<br>               username: this.state.username,<br>               content: this.state.content,<br>            });<br>        }<br>        this.setState({<br>            content: “”<br>        })<br>    }<br></pre><br></li>
 

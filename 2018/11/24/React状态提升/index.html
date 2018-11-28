@@ -87,7 +87,7 @@
 <meta property="og:description" content="在一个React项目中，组件之间常常需要进行数据传递。父组件向子组件传递数据使用props可以很容易实现，但如果是子组件向父组件传递数据或是不具有父子关系的组件之间传递数据，就需要用到状态提升。  注：状态提升适用于组件的嵌套结构比较简单的场景中，如果组件的嵌套结构很复杂，状态被多层提升会给项目的维护造成很大困难，这种情况下应该考虑用Redux来解决。  状态提升还依赖于一个重要的概念——回调函数">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/2018/11/24/img/状态提升.PNG">
-<meta property="og:updated_time" content="2018-11-24T05:32:35.946Z">
+<meta property="og:updated_time" content="2018-11-28T12:56:45.568Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React组件的数据传递方法：状态提升">
 <meta name="twitter:description" content="在一个React项目中，组件之间常常需要进行数据传递。父组件向子组件传递数据使用props可以很容易实现，但如果是子组件向父组件传递数据或是不具有父子关系的组件之间传递数据，就需要用到状态提升。  注：状态提升适用于组件的嵌套结构比较简单的场景中，如果组件的嵌套结构很复杂，状态被多层提升会给项目的维护造成很大困难，这种情况下应该考虑用Redux来解决。  状态提升还依赖于一个重要的概念——回调函数">
@@ -310,7 +310,7 @@
 <p><br>实现方法<br><br></p>
 
 <p><ol></ol></p>
-<li><br>CommentApp组件渲染ComponentInput（输入评论区）和ComponentList（显示评论区两个组件），CommentApp向CommentInput组件传入一个回调函数onSubmit，这个函数会用从子组件那里收到的数据更新自己的state：<br><pre><br> &amp;lt CommentInput onSubmit={this.handleOnSubmit.bind(this) } /&gt;<br> &amp;lt CommentList comments={this.state.comments} /&gt;<br></pre><br></li>
+<li><br>CommentApp组件渲染ComponentInput（输入评论区）和ComponentList（显示评论区两个组件），CommentApp向CommentInput组件传入一个回调函数onSubmit，这个函数会用从子组件那里收到的数据更新自己的state：<br><pre><br> &lt; CommentInput onSubmit={this.handleOnSubmit.bind(this) } /&gt;<br> &lt; CommentList comments={this.state.comments} /&gt;<br></pre><br></li>
 
 <li><br>在子组件ComponentInput里，绑定了一个触发回调函数的关联事件（点击button），在这个关联事件中传递数据（评论用户和评论内容）并且触发回调：<br><pre><br> handleSubmit(){<br>        if(this.props.onSubmit){<br>            this.props.onSubmit({<br>               username: this.state.username,<br>               content: this.state.content,<br>            });<br>        }<br>        this.setState({<br>            content: “”<br>        })<br>    }<br></pre><br></li>
 
