@@ -79,19 +79,13 @@
 
 
 
-<meta name="description" content="在一个React项目中，组件之间常常需要进行数据传递。父组件向子组件传递数据使用props可以很容易实现，但如果是子组件向父组件传递数据或是不具有父子关系的组件之间传递数据，就需要用到状态提升。  注：状态提升适用于组件的嵌套结构比较简单的场景中，如果组件的嵌套结构很复杂，状态被多层提升会给项目的维护造成很大困难，这种情况下应该考虑用Redux来解决。  状态提升还依赖于一个重要的概念——回调函数">
-<meta property="og:type" content="article">
-<meta property="og:title" content="React组件的数据传递方法：状态提升">
-<meta property="og:url" content="http://yoursite.com/2018/11/24/React状态提升/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="njw">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="njw">
-<meta property="og:description" content="在一个React项目中，组件之间常常需要进行数据传递。父组件向子组件传递数据使用props可以很容易实现，但如果是子组件向父组件传递数据或是不具有父子关系的组件之间传递数据，就需要用到状态提升。  注：状态提升适用于组件的嵌套结构比较简单的场景中，如果组件的嵌套结构很复杂，状态被多层提升会给项目的维护造成很大困难，这种情况下应该考虑用Redux来解决。  状态提升还依赖于一个重要的概念——回调函数">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/images/state.PNG">
-<meta property="og:updated_time" content="2018-12-10T12:50:49.771Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React组件的数据传递方法：状态提升">
-<meta name="twitter:description" content="在一个React项目中，组件之间常常需要进行数据传递。父组件向子组件传递数据使用props可以很容易实现，但如果是子组件向父组件传递数据或是不具有父子关系的组件之间传递数据，就需要用到状态提升。  注：状态提升适用于组件的嵌套结构比较简单的场景中，如果组件的嵌套结构很复杂，状态被多层提升会给项目的维护造成很大困难，这种情况下应该考虑用Redux来解决。  状态提升还依赖于一个重要的概念——回调函数">
-<meta name="twitter:image" content="http://yoursite.com/images/state.PNG">
+<meta name="twitter:title" content="njw">
 
 
 
@@ -121,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/24/React状态提升/"/>
+  <link rel="canonical" href="http://yoursite.com/page/2/"/>
 
 
 
 
 
-  <title>React组件的数据传递方法：状态提升 | njw</title>
+  <title>njw</title>
   
 
 
@@ -146,7 +140,8 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -219,9 +214,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -251,7 +246,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">React组件的数据传递方法：状态提升</h1>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/24/React状态提升/" itemprop="url">React组件的数据传递方法：状态提升</a></h1>
         
 
         <div class="post-meta">
@@ -301,7 +298,9 @@
       
 
       
-        <p><br>在一个React项目中，组件之间常常需要进行数据传递。<br><br>父组件向子组件传递数据使用props可以很容易实现，但如果是子组件向父组件传递数据或是不具有父子关系的组件之间传递数据，就需要用到状态提升。<br></p>
+        
+          
+            <p><br>在一个React项目中，组件之间常常需要进行数据传递。<br><br>父组件向子组件传递数据使用props可以很容易实现，但如果是子组件向父组件传递数据或是不具有父子关系的组件之间传递数据，就需要用到状态提升。<br></p>
 
 <p><br><i>注：<br><br>状态提升适用于组件的嵌套结构比较简单的场景中，如果组件的嵌套结构很复杂，状态被多层提升会给项目的维护造成很大困难，这种情况下应该考虑用Redux来解决。<br></i><br></p>
 
@@ -329,6 +328,8 @@
 <p><br></p>
 <p><br>至此CommentInput到CommentList的数据传输完毕。<a href="http://huziketang.mangojuice.top/books/react/lesson14" target="_blank" rel="noopener">完整代码</a><br></p>
 
+          
+        
       
     </div>
     
@@ -345,28 +346,12 @@
       
 
       
-      
+
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/28/blockchain-explorer平台搭建和项目组织结构/" rel="prev" title="blockchain-explorer平台搭建和项目组织结构">
-                blockchain-explorer平台搭建和项目组织结构 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -376,11 +361,14 @@
   </article>
 
 
+    
+  </section>
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
@@ -388,10 +376,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -412,17 +396,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -464,22 +439,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">举个栗子</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -620,10 +579,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
